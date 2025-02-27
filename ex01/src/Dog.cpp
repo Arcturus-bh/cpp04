@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 13:36:36 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:21:29 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,16 @@ Dog::~Dog(void) {
     std::cout << RED "Dog destructor called" << RESET << std::endl;
 }
 
-// SURCHARGE ----------------------------
+// SURCHARGES ----------------------------
 Dog& Dog::operator=(const Dog& other) {
-    if (this != &other)
-        this->type = other.type;
+    if (this != &other) {
+        for (int i = 0; i < 100; i++)
+            this->brain[i] = other.brain[i];
+    }
     return *this;
 }
 
+// METHODES ----------------------------
 void Dog::makeSound(void) const {
     std::cout << MAGENTA << "🦮 OUAF OUAF ! I love you...  Feed me now 🫵 🦴" << RESET << std::endl;
 }

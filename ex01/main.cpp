@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:22:20 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 13:55:56 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:22:41 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int main(void) {
     Dog chienchien;
     Cat chachat;
 
+    chienchien = tab[2];
     
     
     std::cout << "\nDESTRUCTORS" << std::endl;

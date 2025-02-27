@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 13:36:41 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:25:40 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ Cat::~Cat(void) {
 
 // SURCHARGE ----------------------------
 Cat& Cat::operator=(const Cat& other) {
-    if (this != &other)
-        this->type = other.type;
+    if (this != &other) {
+        for (int i = 0; i < 100; i++)
+            this->brain[i] = other.brain[i];
+    }
     return *this;
 }
 
