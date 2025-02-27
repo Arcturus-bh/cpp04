@@ -1,7 +1,7 @@
-NAME = Brain
+NAME = Abstract
 
 SRC = main.cpp \
-	  src/Animal.cpp \
+	  src/AAnimal.cpp \
 	  src/WrongAnimal.cpp \
 	  src/Dog.cpp \
 	  src/Cat.cpp \

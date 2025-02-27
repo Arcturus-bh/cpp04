@@ -6,16 +6,16 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:11:14 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 18:53:01 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:43:32 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
 #define CAT_HPP
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-class Cat : public Animal {
+class Cat : public AAnimal {
     private:
         Brain* brain;
     

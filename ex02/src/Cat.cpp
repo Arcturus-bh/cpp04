@@ -6,19 +6,19 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 18:52:49 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:44:02 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Cat.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
-Cat::Cat(void) : Animal("Cat") {
+Cat::Cat(void) : AAnimal("Cat") {
     this->brain = new Brain();
     std::cout << GREEN "Cat constructor called" << RESET << std::endl;
 }
 
-Cat::Cat(const Cat& other) : Animal(other) {
+Cat::Cat(const Cat& other) : AAnimal(other) {
     this->brain = new Brain(*other.brain);
     std::cout << GREEN "Cat copy constructor called" << RESET << std::endl;
 }

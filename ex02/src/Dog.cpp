@@ -6,19 +6,19 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 18:52:45 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:43:53 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Dog.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
-Dog::Dog(void) : Animal("Dog") {
+Dog::Dog(void) : AAnimal("Dog") {
     this->brain = new Brain();
     std::cout << GREEN "Dog constructor called"<< RESET << std::endl;
 }
 
-Dog::Dog(const Dog& other) : Animal(other) {
+Dog::Dog(const Dog& other) : AAnimal(other) {
     this->brain = new Brain(*other.brain);
     std::cout << GREEN "Dog copy constructor called" << RESET << std::endl;
 }

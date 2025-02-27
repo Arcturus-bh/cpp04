@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:11:14 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 19:14:52 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:43:37 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 #include "AAnimal.hpp"
 
-class Dog : public Animal {
+class Dog : public AAnimal {
     private:
         Brain* brain;
-    
+
     public:
         Dog(void);
         Dog(const Dog& other);
