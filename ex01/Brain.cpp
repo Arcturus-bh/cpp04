@@ -1,34 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.cpp                                            :+:      :+:    :+:   */
+/*   Braincpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:06:35 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:10:32 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/WrongCat.hpp"
+#include "includes/Brain.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
-WrongCat::WrongCat(void) : WrongAnimal("WrongCat") {
-    std::cout << GREEN "WrongCat constructor called" << RESET << std::endl;
+Brain::Brain(void) {
+    std::cout << GREEN "Brain constructor called" << RESET << std::endl;
 }
 
-WrongCat::WrongCat(const WrongCat& other) : WrongAnimal(other) {
+
+Brain::Brain(const Brain& other) {
     *this = other;
-    std::cout << GREEN "WrongCat copy constructor called" << RESET << std::endl;
+    std::cout << GREEN "Brain copy constructor called" << RESET << std::endl;
 }
 
-WrongCat::~WrongCat(void) {
-    std::cout << RED "WrongCat destructor called" << RESET << std::endl;
+Brain::~Brain(void) {
+    std::cout << RED "Brain destructor called" << RESET << std::endl;
 }
 
-// SURCHARGE ----------------------------
-WrongCat& WrongCat::operator=(const WrongCat& other) {
+// SURCHARGES ----------------------------
+Brain& Brain::operator=(const Brain& other) {
     if (this != &other)
-        this->type = other.type;
+    {
+        for (int i = 0; i < 100; i++)
+            this->ideas[i] = other.ideas[i];
+    }
     return *this;
 }
+
+// SETTERS ET GETTERS ----------------------------
+
+
+// FONCTIONS MEMBRES ----------------------------

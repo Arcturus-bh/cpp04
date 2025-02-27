@@ -6,11 +6,11 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:08:52 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:27:58 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "includes/Dog.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
 Dog::Dog(void) : Animal("Dog") {
@@ -34,5 +34,5 @@ Dog& Dog::operator=(const Dog& other) {
 }
 
 void Dog::makeSound(void) const {
-    std::cout << MAGENTA << "OUAF OUAF I'M A DOG" << std::endl;
+    std::cout << MAGENTA << "🦮 OUAF OUAF ! I love you...  Feed me now 🫵 🦴" << std::endl;
 }

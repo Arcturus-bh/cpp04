@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:11:14 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:25:43 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:28:17 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
 
 #include "Animal.hpp"
 
-class Cat : public Animal {
-    protected:
-        std::string type;
-
+class Dog : public Animal {
     public:
-        Cat(void);
-        Cat(const Cat& other);
-        Cat& operator=(const Cat& other);
-        virtual ~Cat(void);
+        Dog(void);
+        Dog(const Dog& other);
+        Dog& operator=(const Dog& other);
+        virtual ~Dog(void);
 
         void makeSound(void) const;
 };

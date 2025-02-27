@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.cpp                                         :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:16:54 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:20:46 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/WrongAnimal.hpp"
+#include "includes/Animal.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
-WrongAnimal::WrongAnimal(void) {
-    std::cout << GREEN "WrongAnimal constructor called" << RESET << std::endl;
+Animal::Animal(void) {
+    std::cout << GREEN "Animal constructor called" << RESET << std::endl;
 }
 
-WrongAnimal::WrongAnimal(std::string type) {
+Animal::Animal(std::string type) {
     this->type = type;
-    std::cout << GREEN "WrongAnimal constructor called" << RESET << std::endl;
+    std::cout << GREEN "Animal constructor called" << RESET << std::endl;
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal& other) {
+Animal::Animal(const Animal& other) {
     *this = other;
-    std::cout << GREEN "WrongAnimal copy constructor called" << RESET << std::endl;
+    std::cout << GREEN "Animal copy constructor called" << RESET << std::endl;
 }
 
-WrongAnimal::~WrongAnimal(void) {
-    std::cout << RED "WrongAnimal destructor called" << RESET << std::endl;
+Animal::~Animal(void) {
+    std::cout << RED "Animal destructor called" << RESET << std::endl;
 }
 
 // SURCHARGE ----------------------------
-WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other) {
+Animal& Animal::operator=(const Animal& other) {
     if (this != &other)
         this->type = other.type;
     return *this;
@@ -41,16 +41,16 @@ WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other) {
 
 // SETTERS ET GETTERS ----------------------------
 
-void WrongAnimal::setType(std::string& type) {
+void Animal::setType(std::string& type) {
     this->type = type;   
 }
 
-std::string WrongAnimal::getType(void) const {
+std::string Animal::getType(void) const {
     return this->type;
 }
 
 // FONCTIONS MEMBRES ----------------------------
 
-void WrongAnimal::makeSound(void) const {
-    std::cout << MAGENTA "I'm a wrong animal... Is it a bad thing ? 😔" << std::endl;
+void Animal::makeSound(void) const {
+    std::cout << MAGENTA "❓ I'm an animal... But  which ones ?" << std::endl;
 }

@@ -6,15 +6,15 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:22:20 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/27 08:53:17 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:30:08 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
-#include "WrongAnimal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
+#include "includes/Animal.hpp"
+#include "includes/WrongAnimal.hpp"
+#include "includes/Dog.hpp"
+#include "includes/Cat.hpp"
+#include "includes/WrongCat.hpp"
 
 int main(void) {
     {

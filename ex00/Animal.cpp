@@ -6,11 +6,11 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:06:47 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:16:54 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 11:01:54 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "includes/Animal.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
 Animal::Animal(void) {
@@ -52,5 +52,5 @@ std::string Animal::getType(void) const {
 // FONCTIONS MEMBRES ----------------------------
 
 void Animal::makeSound(void) const {
-    std::cout << MAGENTA "???? I'm an animal... But WHAT animal ?!" << std::endl;
+    std::cout << MAGENTA "❓ I'm an animal... But  which ones ?" << std::endl;
 }
