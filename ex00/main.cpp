@@ -6,13 +6,15 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 18:22:20 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/26 19:27:20 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/27 08:53:17 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "WrongAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongCat.hpp"
 
 int main(void) {
     {
@@ -25,6 +27,7 @@ int main(void) {
         animal.makeSound();
         dog.makeSound();
         cat.makeSound();
+        std::cout << std::endl;
     }
     {
         std::cout << "\nMAIN GAVE BY THE SUBJECT"<< std::endl;
@@ -39,5 +42,15 @@ int main(void) {
         delete meta;
         delete j;
         delete i;
+        std::cout << std::endl;
+    }
+    {
+        std::cout << "TRY WITH WRONGANIMAL AND WRONGCAT "<< std::endl;
+        WrongAnimal wanimal;
+        WrongCat wcat;
+
+        wanimal.makeSound();
+        wcat.makeSound();
+        std::cout << std::endl;
     }
 }
