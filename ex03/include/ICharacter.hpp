@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 13:39:26 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/28 15:54:46 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/02/28 16:56:16 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 class ICharacter {
     public:
         virtual ~ICharacter(void);
-        
-        virtual std::string const & getName() const = 0;
-        virtual void        equip(AMateria* m) = 0;
-        virtual void        unequip(int idx) = 0;
-        virtual void        use(int idx, ICharacter& target) = 0;
+
+        virtual std::string const& getName() const = 0;
+        virtual void equip(AMateria* m) = 0;
+        virtual void unequip(int idx) = 0;
+        virtual void use(int idx, ICharacter& target) = 0;
 };
 
 #endif

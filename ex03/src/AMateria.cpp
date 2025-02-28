@@ -38,7 +38,6 @@ AMateria& AMateria::operator=(const AMateria& other) {
     return *this;
 }
 
-
 // SETTERS ET GETTERS ----------------------------
 std::string const& AMateria::getType(void) const {
     return type;

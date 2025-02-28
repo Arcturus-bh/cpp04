@@ -5,6 +5,7 @@ SRC = main.cpp \
 	  src/Ice.cpp \
 	  src/Cure.cpp \
 	  src/ICharacter.cpp \
+	  src/Character.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 
