@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 13:39:26 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/28 15:45:27 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/03/02 15:32:09 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "AMateria.hpp"
 
-class Cure : AMateria {
+class Cure : public AMateria {
     protected:
         std::string _type;
 

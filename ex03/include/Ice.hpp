@@ -6,7 +6,7 @@
 /*   By: aldalmas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 13:39:26 by aldalmas          #+#    #+#             */
-/*   Updated: 2025/02/28 14:42:26 by aldalmas         ###   ########.fr       */
+/*   Updated: 2025/03/02 15:32:04 by aldalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "AMateria.hpp"
 
-class Ice : AMateria {
+class Ice : public AMateria {
     private:
         std::string _type;
 
