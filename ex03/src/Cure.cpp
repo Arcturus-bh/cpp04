@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 
 #include "../include/Cure.hpp"
+#include "../include/ICharacter.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
-Cure::Cure(void) : AMateria("Cure") {
-    this->_type = "Cure";
+Cure::Cure(void) : AMateria("cure") {
     std::cout << GREEN "Cure constructor called" << RESET << std::endl;
 }
 
-Cure::Cure(const Cure& other) : AMateria("Cure") {
+Cure::Cure(const Cure& other) : AMateria("cure") {
     *this = other;
     std::cout << GREEN "Cure copy constructor called" << RESET << std::endl;
 }
@@ -38,12 +38,9 @@ Cure& Cure::operator=(const Cure& other) {
 
 // FONCTIONS MEMBRES ----------------------------
 AMateria* Cure::clone(void) const {
-    Cure* cure = NULL;
-    AMateria* clone = cure;
-    return clone;
+    return new Cure(*this);
 }
 
 void Cure::use(ICharacter& target) {
-    (void)target;
-    std::cout << CYAN "shoots an Cure bolt at *" << RESET << std::endl;
+    std::cout << CYAN "* heals " << target.getName() << "'s wounds * 💖" << RESET << std::endl;
 }

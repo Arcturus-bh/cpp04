@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 #include "../include/Ice.hpp"
+#include "../include/ICharacter.hpp"
 
 // CONSTRUCTORS AND DESTRUCTOR ----------------------------
 Ice::Ice(void) : AMateria("ice") {
-    this->_type = "ice";
     std::cout << GREEN "Ice constructor called" << RESET << std::endl;
 }
 
@@ -38,12 +38,9 @@ Ice& Ice::operator=(const Ice& other) {
 
 // FONCTIONS MEMBRES ----------------------------
 AMateria* Ice::clone(void) const {
-    Ice* ice = NULL;
-    AMateria* clone = ice;
-    return clone;
+    return new Ice(*this);
 }
 
 void Ice::use(ICharacter& target) {
-    (void)target;
-    std::cout << CYAN "shoots an ice bolt at *" << RESET << std::endl;
+    std::cout << CYAN "* shoots an ice bolt at " << target.getName() << " * 🥶" << RESET << std::endl;
 }
